@@ -1,0 +1,21 @@
+Time | a b c d | out
+Testbench for highpriority_encoder
+VCD info: dumpfile ../../sim/waveforms/highpriority_encoder_tb.vcd opened for output.
+Monitor:    0 | a=0 b=0 c=0 d=0 -> out=00
+Monitor: 1000 | a=1 b=0 c=0 d=0 -> out=00
+Monitor: 2000 | a=0 b=1 c=0 d=0 -> out=01
+Monitor: 3000 | a=1 b=1 c=0 d=0 -> out=01
+Monitor: 4000 | a=0 b=0 c=1 d=0 -> out=10
+Monitor: 5000 | a=1 b=0 c=1 d=0 -> out=10
+Monitor: 6000 | a=0 b=1 c=1 d=0 -> out=10
+Monitor: 7000 | a=1 b=1 c=1 d=0 -> out=10
+Monitor: 8000 | a=0 b=0 c=0 d=1 -> out=11
+Monitor: 9000 | a=1 b=0 c=0 d=1 -> out=11
+Monitor: 10000 | a=0 b=1 c=0 d=1 -> out=11
+Monitor: 11000 | a=1 b=1 c=0 d=1 -> out=11
+Monitor: 12000 | a=0 b=0 c=1 d=1 -> out=11
+Monitor: 13000 | a=1 b=0 c=1 d=1 -> out=11
+Monitor: 14000 | a=0 b=1 c=1 d=1 -> out=11
+Monitor: 15000 | a=1 b=1 c=1 d=1 -> out=11
+Testbench completed
+../../tb/highpriority_encoder_tb.sv:83: $finish called at 16000 (1ps)

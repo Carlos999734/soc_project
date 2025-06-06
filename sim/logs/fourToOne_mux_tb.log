@@ -1,0 +1,10 @@
+VCD info: dumpfile ../../sim/waveforms/fourToOne_mux_tb.vcd opened for output.
+Monitor:    0 | sel=xx -> out=00
+Time | sel | out |
+Testbench for 4 to 1 mux
+Monitor: 1000 | sel=00 -> out=aa
+Monitor: 2000 | sel=01 -> out=bb
+Monitor: 3000 | sel=10 -> out=cc
+Monitor: 4000 | sel=11 -> out=dd
+Testbench completed
+../../tb/fourToOne_mux_tb.sv:71: $finish called at 5000 (1ps)

@@ -1,0 +1,9 @@
+Time | a b | sum | carry
+Testbench for half adder
+VCD info: dumpfile ../../sim/waveforms/halfadder_tb.vcd opened for output.
+Monitor:    0 | a=0 b=0 -> sum=0 , carry=0
+Monitor: 1000 | a=0 b=1 -> sum=1 , carry=0
+Monitor: 2000 | a=1 b=0 -> sum=1 , carry=0
+Monitor: 3000 | a=1 b=1 -> sum=0 , carry=1
+Testbench completed
+../../tb/halfadder_tb.sv:72: $finish called at 4000 (1ps)

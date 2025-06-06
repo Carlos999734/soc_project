@@ -1,0 +1,63 @@
+Starting testbench for ripple_carry_adder
+VCD info: dumpfile ../../sim/waveforms/ripplecarry_adder_tb.vcd opened for output.
+Time 0: a=xxxxxxxx b=xxxxxxxx → sum=xxxxxxxx carry=x
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=146 b=64 → sum=x carry=x (expected sum=210 carry=0)
+       Time: 35000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 35000: a=10010010 b=01000000 → sum=11010010 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=4 b=49 → sum=210 carry=0 (expected sum=53 carry=0)
+       Time: 45000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 45000: a=00000100 b=00110001 → sum=00110101 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=134 b=198 → sum=53 carry=0 (expected sum=76 carry=1)
+       Time: 55000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 55000: a=10000110 b=11000110 → sum=01001100 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=50 b=9 → sum=76 carry=1 (expected sum=59 carry=0)
+       Time: 65000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 65000: a=00110010 b=00001001 → sum=00111011 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=128 b=134 → sum=59 carry=0 (expected sum=6 carry=1)
+       Time: 75000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 75000: a=10000000 b=10000110 → sum=00000110 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=187 b=158 → sum=6 carry=1 (expected sum=89 carry=1)
+       Time: 85000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 85000: a=10111011 b=10011110 → sum=01011001 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=246 b=198 → sum=89 carry=1 (expected sum=188 carry=1)
+       Time: 95000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 95000: a=11110110 b=11000110 → sum=10111100 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=252 b=99 → sum=188 carry=1 (expected sum=95 carry=1)
+       Time: 105000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 105000: a=11111100 b=01100011 → sum=01011111 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=98 b=85 → sum=95 carry=1 (expected sum=183 carry=0)
+       Time: 115000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 115000: a=01100010 b=01010101 → sum=10110111 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=242 b=59 → sum=183 carry=0 (expected sum=45 carry=1)
+       Time: 125000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 125000: a=11110010 b=00111011 → sum=00101101 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=9 b=199 → sum=45 carry=1 (expected sum=208 carry=0)
+       Time: 135000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 135000: a=00001001 b=11000111 → sum=11010000 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=249 b=103 → sum=208 carry=0 (expected sum=96 carry=1)
+       Time: 145000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 145000: a=11111001 b=01100111 → sum=01100000 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=116 b=98 → sum=96 carry=1 (expected sum=214 carry=0)
+       Time: 155000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 155000: a=01110100 b=01100010 → sum=11010110 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=174 b=94 → sum=214 carry=0 (expected sum=12 carry=1)
+       Time: 165000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 165000: a=10101110 b=01011110 → sum=00001100 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=22 b=50 → sum=12 carry=1 (expected sum=72 carry=0)
+       Time: 175000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 175000: a=00010110 b=00110010 → sum=01001000 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=49 b=133 → sum=72 carry=0 (expected sum=182 carry=0)
+       Time: 185000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 185000: a=00110001 b=10000101 → sum=10110110 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=64 b=144 → sum=182 carry=0 (expected sum=208 carry=0)
+       Time: 195000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 195000: a=01000000 b=10010000 → sum=11010000 carry=0
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=213 b=78 → sum=208 carry=0 (expected sum=35 carry=1)
+       Time: 205000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 205000: a=11010101 b=01001110 → sum=00100011 carry=1
+ERROR: ../../tb/ripplecarry_adder_tb.sv:56: FAIL: a=75 b=9 → sum=35 carry=1 (expected sum=84 carry=0)
+       Time: 215000  Scope: ripplecarry_adder_tb.$ivl_for_loop0
+Time 215000: a=01001011 b=00001001 → sum=01010100 carry=0
+Testbench complete: 0 passed, 19 failed
+../../tb/ripplecarry_adder_tb.sv:81: $finish called at 225000 (1ps)
+Time 225000: a=00000110 b=00101001 → sum=00101111 carry=0
