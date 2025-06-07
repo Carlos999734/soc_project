@@ -1,0 +1,305 @@
+Starting testbench for register
+VCD info: dumpfile ../../sim/waveforms/register_tb.vcd opened for output.
+Time 5000: d=00000000 clk=1 → out=xxxxxxxx
+Time 15000: d=00000000 clk=1 → out=00000000
+Time 25000: d=00000000 clk=1 → out=00000000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10010010 clk=1 → out=00000000 (expected out=10010010)
+       Time: 35000  Scope: register_tb.$ivl_for_loop0
+Time 35000: d=10010010 clk=1 → out=00000000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01000000 clk=1 → out=10010010 (expected out=01000000)
+       Time: 45000  Scope: register_tb.$ivl_for_loop0
+Time 45000: d=01000000 clk=1 → out=10010010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00000100 clk=1 → out=01000000 (expected out=00000100)
+       Time: 55000  Scope: register_tb.$ivl_for_loop0
+Time 55000: d=00000100 clk=1 → out=01000000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00110001 clk=1 → out=00000100 (expected out=00110001)
+       Time: 65000  Scope: register_tb.$ivl_for_loop0
+Time 65000: d=00110001 clk=1 → out=00000100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000110 clk=1 → out=00110001 (expected out=10000110)
+       Time: 75000  Scope: register_tb.$ivl_for_loop0
+Time 75000: d=10000110 clk=1 → out=00110001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000110 clk=1 → out=10000110 (expected out=11000110)
+       Time: 85000  Scope: register_tb.$ivl_for_loop0
+Time 85000: d=11000110 clk=1 → out=10000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00110010 clk=1 → out=11000110 (expected out=00110010)
+       Time: 95000  Scope: register_tb.$ivl_for_loop0
+Time 95000: d=00110010 clk=1 → out=11000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00001001 clk=1 → out=00110010 (expected out=00001001)
+       Time: 105000  Scope: register_tb.$ivl_for_loop0
+Time 105000: d=00001001 clk=1 → out=00110010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000000 clk=1 → out=00001001 (expected out=10000000)
+       Time: 115000  Scope: register_tb.$ivl_for_loop0
+Time 115000: d=10000000 clk=1 → out=00001001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000110 clk=1 → out=10000000 (expected out=10000110)
+       Time: 125000  Scope: register_tb.$ivl_for_loop0
+Time 125000: d=10000110 clk=1 → out=10000000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10111011 clk=1 → out=10000110 (expected out=10111011)
+       Time: 135000  Scope: register_tb.$ivl_for_loop0
+Time 135000: d=10111011 clk=1 → out=10000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10011110 clk=1 → out=10111011 (expected out=10011110)
+       Time: 145000  Scope: register_tb.$ivl_for_loop0
+Time 145000: d=10011110 clk=1 → out=10111011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11110110 clk=1 → out=10011110 (expected out=11110110)
+       Time: 155000  Scope: register_tb.$ivl_for_loop0
+Time 155000: d=11110110 clk=1 → out=10011110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000110 clk=1 → out=11110110 (expected out=11000110)
+       Time: 165000  Scope: register_tb.$ivl_for_loop0
+Time 165000: d=11000110 clk=1 → out=11110110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11111100 clk=1 → out=11000110 (expected out=11111100)
+       Time: 175000  Scope: register_tb.$ivl_for_loop0
+Time 175000: d=11111100 clk=1 → out=11000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100011 clk=1 → out=11111100 (expected out=01100011)
+       Time: 185000  Scope: register_tb.$ivl_for_loop0
+Time 185000: d=01100011 clk=1 → out=11111100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100010 clk=1 → out=01100011 (expected out=01100010)
+       Time: 195000  Scope: register_tb.$ivl_for_loop0
+Time 195000: d=01100010 clk=1 → out=01100011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01010101 clk=1 → out=01100010 (expected out=01010101)
+       Time: 205000  Scope: register_tb.$ivl_for_loop0
+Time 205000: d=01010101 clk=1 → out=01100010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11110010 clk=1 → out=01010101 (expected out=11110010)
+       Time: 215000  Scope: register_tb.$ivl_for_loop0
+Time 215000: d=11110010 clk=1 → out=01010101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00111011 clk=1 → out=11110010 (expected out=00111011)
+       Time: 225000  Scope: register_tb.$ivl_for_loop0
+Time 225000: d=00111011 clk=1 → out=11110010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00001001 clk=1 → out=00111011 (expected out=00001001)
+       Time: 235000  Scope: register_tb.$ivl_for_loop0
+Time 235000: d=00001001 clk=1 → out=00111011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000111 clk=1 → out=00001001 (expected out=11000111)
+       Time: 245000  Scope: register_tb.$ivl_for_loop0
+Time 245000: d=11000111 clk=1 → out=00001001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11111001 clk=1 → out=11000111 (expected out=11111001)
+       Time: 255000  Scope: register_tb.$ivl_for_loop0
+Time 255000: d=11111001 clk=1 → out=11000111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100111 clk=1 → out=11111001 (expected out=01100111)
+       Time: 265000  Scope: register_tb.$ivl_for_loop0
+Time 265000: d=01100111 clk=1 → out=11111001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01110100 clk=1 → out=01100111 (expected out=01110100)
+       Time: 275000  Scope: register_tb.$ivl_for_loop0
+Time 275000: d=01110100 clk=1 → out=01100111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100010 clk=1 → out=01110100 (expected out=01100010)
+       Time: 285000  Scope: register_tb.$ivl_for_loop0
+Time 285000: d=01100010 clk=1 → out=01110100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10101110 clk=1 → out=01100010 (expected out=10101110)
+       Time: 295000  Scope: register_tb.$ivl_for_loop0
+Time 295000: d=10101110 clk=1 → out=01100010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01011110 clk=1 → out=10101110 (expected out=01011110)
+       Time: 305000  Scope: register_tb.$ivl_for_loop0
+Time 305000: d=01011110 clk=1 → out=10101110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00010110 clk=1 → out=01011110 (expected out=00010110)
+       Time: 315000  Scope: register_tb.$ivl_for_loop0
+Time 315000: d=00010110 clk=1 → out=01011110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00110010 clk=1 → out=00010110 (expected out=00110010)
+       Time: 325000  Scope: register_tb.$ivl_for_loop0
+Time 325000: d=00110010 clk=1 → out=00010110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00110001 clk=1 → out=00110010 (expected out=00110001)
+       Time: 335000  Scope: register_tb.$ivl_for_loop0
+Time 335000: d=00110001 clk=1 → out=00110010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000101 clk=1 → out=00110001 (expected out=10000101)
+       Time: 345000  Scope: register_tb.$ivl_for_loop0
+Time 345000: d=10000101 clk=1 → out=00110001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01000000 clk=1 → out=10000101 (expected out=01000000)
+       Time: 355000  Scope: register_tb.$ivl_for_loop0
+Time 355000: d=01000000 clk=1 → out=10000101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10010000 clk=1 → out=01000000 (expected out=10010000)
+       Time: 365000  Scope: register_tb.$ivl_for_loop0
+Time 365000: d=10010000 clk=1 → out=01000000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11010101 clk=1 → out=10010000 (expected out=11010101)
+       Time: 375000  Scope: register_tb.$ivl_for_loop0
+Time 375000: d=11010101 clk=1 → out=10010000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01001110 clk=1 → out=11010101 (expected out=01001110)
+       Time: 385000  Scope: register_tb.$ivl_for_loop0
+Time 385000: d=01001110 clk=1 → out=11010101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01001011 clk=1 → out=01001110 (expected out=01001011)
+       Time: 395000  Scope: register_tb.$ivl_for_loop0
+Time 395000: d=01001011 clk=1 → out=01001110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00001001 clk=1 → out=01001011 (expected out=00001001)
+       Time: 405000  Scope: register_tb.$ivl_for_loop0
+Time 405000: d=00001001 clk=1 → out=01001011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00000110 clk=1 → out=00001001 (expected out=00000110)
+       Time: 415000  Scope: register_tb.$ivl_for_loop0
+Time 415000: d=00000110 clk=1 → out=00001001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00101001 clk=1 → out=00000110 (expected out=00101001)
+       Time: 425000  Scope: register_tb.$ivl_for_loop0
+Time 425000: d=00101001 clk=1 → out=00000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10110101 clk=1 → out=00101001 (expected out=10110101)
+       Time: 435000  Scope: register_tb.$ivl_for_loop0
+Time 435000: d=10110101 clk=1 → out=00101001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01101010 clk=1 → out=10110101 (expected out=01101010)
+       Time: 445000  Scope: register_tb.$ivl_for_loop0
+Time 445000: d=01101010 clk=1 → out=10110101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00000001 clk=1 → out=01101010 (expected out=00000001)
+       Time: 455000  Scope: register_tb.$ivl_for_loop0
+Time 455000: d=00000001 clk=1 → out=01101010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01010111 clk=1 → out=00000001 (expected out=01010111)
+       Time: 465000  Scope: register_tb.$ivl_for_loop0
+Time 465000: d=01010111 clk=1 → out=00000001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10001110 clk=1 → out=01010111 (expected out=10001110)
+       Time: 475000  Scope: register_tb.$ivl_for_loop0
+Time 475000: d=10001110 clk=1 → out=01010111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100111 clk=1 → out=10001110 (expected out=01100111)
+       Time: 485000  Scope: register_tb.$ivl_for_loop0
+Time 485000: d=01100111 clk=1 → out=10001110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10010001 clk=1 → out=01100111 (expected out=10010001)
+       Time: 495000  Scope: register_tb.$ivl_for_loop0
+Time 495000: d=10010001 clk=1 → out=01100111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000101 clk=1 → out=10010001 (expected out=10000101)
+       Time: 505000  Scope: register_tb.$ivl_for_loop0
+Time 505000: d=10000101 clk=1 → out=10010001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100101 clk=1 → out=10000101 (expected out=01100101)
+       Time: 515000  Scope: register_tb.$ivl_for_loop0
+Time 515000: d=01100101 clk=1 → out=10000101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00011110 clk=1 → out=01100101 (expected out=00011110)
+       Time: 525000  Scope: register_tb.$ivl_for_loop0
+Time 525000: d=00011110 clk=1 → out=01100101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11111001 clk=1 → out=00011110 (expected out=11111001)
+       Time: 535000  Scope: register_tb.$ivl_for_loop0
+Time 535000: d=11111001 clk=1 → out=00011110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000101 clk=1 → out=11111001 (expected out=11000101)
+       Time: 545000  Scope: register_tb.$ivl_for_loop0
+Time 545000: d=11000101 clk=1 → out=11111001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10100000 clk=1 → out=11000101 (expected out=10100000)
+       Time: 555000  Scope: register_tb.$ivl_for_loop0
+Time 555000: d=10100000 clk=1 → out=11000101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01101100 clk=1 → out=10100000 (expected out=01101100)
+       Time: 565000  Scope: register_tb.$ivl_for_loop0
+Time 565000: d=01101100 clk=1 → out=10100000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10111100 clk=1 → out=01101100 (expected out=10111100)
+       Time: 575000  Scope: register_tb.$ivl_for_loop0
+Time 575000: d=10111100 clk=1 → out=01101100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01000100 clk=1 → out=10111100 (expected out=01000100)
+       Time: 585000  Scope: register_tb.$ivl_for_loop0
+Time 585000: d=01000100 clk=1 → out=10111100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11110101 clk=1 → out=01000100 (expected out=11110101)
+       Time: 595000  Scope: register_tb.$ivl_for_loop0
+Time 595000: d=11110101 clk=1 → out=01000100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11011011 clk=1 → out=11110101 (expected out=11011011)
+       Time: 605000  Scope: register_tb.$ivl_for_loop0
+Time 605000: d=11011011 clk=1 → out=11110101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11100011 clk=1 → out=11011011 (expected out=11100011)
+       Time: 615000  Scope: register_tb.$ivl_for_loop0
+Time 615000: d=11100011 clk=1 → out=11011011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11010111 clk=1 → out=11100011 (expected out=11010111)
+       Time: 625000  Scope: register_tb.$ivl_for_loop0
+Time 625000: d=11010111 clk=1 → out=11100011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01011110 clk=1 → out=11010111 (expected out=01011110)
+       Time: 635000  Scope: register_tb.$ivl_for_loop0
+Time 635000: d=01011110 clk=1 → out=11010111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10010101 clk=1 → out=01011110 (expected out=10010101)
+       Time: 645000  Scope: register_tb.$ivl_for_loop0
+Time 645000: d=10010101 clk=1 → out=01011110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00000101 clk=1 → out=10010101 (expected out=00000101)
+       Time: 655000  Scope: register_tb.$ivl_for_loop0
+Time 655000: d=00000101 clk=1 → out=10010101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00111000 clk=1 → out=00000101 (expected out=00111000)
+       Time: 665000  Scope: register_tb.$ivl_for_loop0
+Time 665000: d=00111000 clk=1 → out=00000101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000010 clk=1 → out=00111000 (expected out=11000010)
+       Time: 675000  Scope: register_tb.$ivl_for_loop0
+Time 675000: d=11000010 clk=1 → out=00111000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10100111 clk=1 → out=11000010 (expected out=10100111)
+       Time: 685000  Scope: register_tb.$ivl_for_loop0
+Time 685000: d=10100111 clk=1 → out=11000010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00011101 clk=1 → out=10100111 (expected out=00011101)
+       Time: 695000  Scope: register_tb.$ivl_for_loop0
+Time 695000: d=00011101 clk=1 → out=10100111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10011101 clk=1 → out=00011101 (expected out=10011101)
+       Time: 705000  Scope: register_tb.$ivl_for_loop0
+Time 705000: d=10011101 clk=1 → out=00011101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00111111 clk=1 → out=10011101 (expected out=00111111)
+       Time: 715000  Scope: register_tb.$ivl_for_loop0
+Time 715000: d=00111111 clk=1 → out=10011101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10001010 clk=1 → out=00111111 (expected out=10001010)
+       Time: 725000  Scope: register_tb.$ivl_for_loop0
+Time 725000: d=10001010 clk=1 → out=00111111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11111000 clk=1 → out=10001010 (expected out=11111000)
+       Time: 735000  Scope: register_tb.$ivl_for_loop0
+Time 735000: d=11111000 clk=1 → out=10001010
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11101100 clk=1 → out=11111000 (expected out=11101100)
+       Time: 745000  Scope: register_tb.$ivl_for_loop0
+Time 745000: d=11101100 clk=1 → out=11111000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10110001 clk=1 → out=11101100 (expected out=10110001)
+       Time: 755000  Scope: register_tb.$ivl_for_loop0
+Time 755000: d=10110001 clk=1 → out=11101100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10100110 clk=1 → out=10110001 (expected out=10100110)
+       Time: 765000  Scope: register_tb.$ivl_for_loop0
+Time 765000: d=10100110 clk=1 → out=10110001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11001111 clk=1 → out=10100110 (expected out=11001111)
+       Time: 775000  Scope: register_tb.$ivl_for_loop0
+Time 775000: d=11001111 clk=1 → out=10100110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000111 clk=1 → out=11001111 (expected out=11000111)
+       Time: 785000  Scope: register_tb.$ivl_for_loop0
+Time 785000: d=11000111 clk=1 → out=11001111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11111100 clk=1 → out=11000111 (expected out=11111100)
+       Time: 795000  Scope: register_tb.$ivl_for_loop0
+Time 795000: d=11111100 clk=1 → out=11000111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01011011 clk=1 → out=11111100 (expected out=01011011)
+       Time: 805000  Scope: register_tb.$ivl_for_loop0
+Time 805000: d=01011011 clk=1 → out=11111100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01001111 clk=1 → out=01011011 (expected out=01001111)
+       Time: 815000  Scope: register_tb.$ivl_for_loop0
+Time 815000: d=01001111 clk=1 → out=01011011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00101110 clk=1 → out=01001111 (expected out=00101110)
+       Time: 825000  Scope: register_tb.$ivl_for_loop0
+Time 825000: d=00101110 clk=1 → out=01001111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00101101 clk=1 → out=00101110 (expected out=00101101)
+       Time: 835000  Scope: register_tb.$ivl_for_loop0
+Time 835000: d=00101101 clk=1 → out=00101110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000100 clk=1 → out=00101101 (expected out=11000100)
+       Time: 845000  Scope: register_tb.$ivl_for_loop0
+Time 845000: d=11000100 clk=1 → out=00101101
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00100100 clk=1 → out=11000100 (expected out=00100100)
+       Time: 855000  Scope: register_tb.$ivl_for_loop0
+Time 855000: d=00100100 clk=1 → out=11000100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01101000 clk=1 → out=00100100 (expected out=01101000)
+       Time: 865000  Scope: register_tb.$ivl_for_loop0
+Time 865000: d=01101000 clk=1 → out=00100100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01101011 clk=1 → out=01101000 (expected out=01101011)
+       Time: 875000  Scope: register_tb.$ivl_for_loop0
+Time 875000: d=01101011 clk=1 → out=01101000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00101000 clk=1 → out=01101011 (expected out=00101000)
+       Time: 885000  Scope: register_tb.$ivl_for_loop0
+Time 885000: d=00101000 clk=1 → out=01101011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11001011 clk=1 → out=00101000 (expected out=11001011)
+       Time: 895000  Scope: register_tb.$ivl_for_loop0
+Time 895000: d=11001011 clk=1 → out=00101000
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10000110 clk=1 → out=11001011 (expected out=10000110)
+       Time: 905000  Scope: register_tb.$ivl_for_loop0
+Time 905000: d=10000110 clk=1 → out=11001011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01100001 clk=1 → out=10000110 (expected out=01100001)
+       Time: 915000  Scope: register_tb.$ivl_for_loop0
+Time 915000: d=01100001 clk=1 → out=10000110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11100100 clk=1 → out=01100001 (expected out=11100100)
+       Time: 925000  Scope: register_tb.$ivl_for_loop0
+Time 925000: d=11100100 clk=1 → out=01100001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00111011 clk=1 → out=11100100 (expected out=00111011)
+       Time: 935000  Scope: register_tb.$ivl_for_loop0
+Time 935000: d=00111011 clk=1 → out=11100100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10011110 clk=1 → out=00111011 (expected out=10011110)
+       Time: 945000  Scope: register_tb.$ivl_for_loop0
+Time 945000: d=10011110 clk=1 → out=00111011
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10001001 clk=1 → out=10011110 (expected out=10001001)
+       Time: 955000  Scope: register_tb.$ivl_for_loop0
+Time 955000: d=10001001 clk=1 → out=10011110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=00111111 clk=1 → out=10001001 (expected out=00111111)
+       Time: 965000  Scope: register_tb.$ivl_for_loop0
+Time 965000: d=00111111 clk=1 → out=10001001
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10110110 clk=1 → out=00111111 (expected out=10110110)
+       Time: 975000  Scope: register_tb.$ivl_for_loop0
+Time 975000: d=10110110 clk=1 → out=00111111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10011100 clk=1 → out=10110110 (expected out=10011100)
+       Time: 985000  Scope: register_tb.$ivl_for_loop0
+Time 985000: d=10011100 clk=1 → out=10110110
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=10001111 clk=1 → out=10011100 (expected out=10001111)
+       Time: 995000  Scope: register_tb.$ivl_for_loop0
+Time 995000: d=10001111 clk=1 → out=10011100
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=01101001 clk=1 → out=10001111 (expected out=01101001)
+       Time: 1005000  Scope: register_tb.$ivl_for_loop0
+Time 1005000: d=01101001 clk=1 → out=10001111
+ERROR: ../../tb/register_tb.sv:60: FAIL: d=11000010 clk=1 → out=01101001 (expected out=11000010)
+       Time: 1015000  Scope: register_tb.$ivl_for_loop0
+Time 1015000: d=11000010 clk=1 → out=01101001
+Time 1025000: d=00111100 clk=1 → out=11000010
+Testbench complete: 0 passed, 99 failed
+../../tb/register_tb.sv:80: $finish called at 1025000 (1ps)

@@ -64,9 +64,9 @@ module ripplecarry_adder_tb();
 
             // Phase 2: Apply new inputs
             @(posedge clk);
-            rand_val = $urandom_range(0, 255);
+            rand_val = $urandom_range(0, (1 << DATA_WIDTH)-1);
             tb_a = rand_val[DATA_WIDTH-1:0];
-            rand_val = $urandom_range(0, 255);
+            rand_val = $urandom_range(0, (1 << DATA_WIDTH)-1);
             tb_b = rand_val[DATA_WIDTH-1:0];
 
             // Phase 3: Compute expected result for new inputs

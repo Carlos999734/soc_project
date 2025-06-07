@@ -40,9 +40,9 @@ module comparator_tb();
 
         // Randomized testing loop
         for (int i = 0; i < NUM_TESTS; i++) begin
-            rand_val = $urandom_range(0, 255);
+            rand_val = $urandom_range(0, (1 << DATA_WIDTH)-1);
             ref_a = rand_val[DATA_WIDTH-1:0];
-            rand_val = $urandom_range(0, 255);
+            rand_val = $urandom_range(0, (1 << DATA_WIDTH)-1);
             ref_b = rand_val[DATA_WIDTH-1:0];
 
             // Drive DUT inputs

@@ -1,10 +1,10 @@
 ## 🚀 Typical Workflow (Stage 2 → Stage 4)
 
-### Automated Run with run_sim.sh
+### Automated Run with run_sim.sh (Current Flow)
 
 You can now automate the full flow using `/sim/scripts/run_sim.sh`.
 
-This uses Verilator's `--binary` flow with `--top-module` to correctly select your testbench module.
+This runs Icarus Verilog (iverilog) → generates vvp binary → runs simulation with vvp → generates VCD → opens in GTKWave.
 
 > ⚠️ **First time only:**  
 > You need to make the script executable:  
@@ -26,80 +26,79 @@ Or for other testbenches:
 ./run_sim.sh comparator_tb
 ./run_sim.sh ripplecarry_adder_tb
 ./run_sim.sh fourToOne_mux_tb
+./run_sim.sh highpriority_encoder_tb
+./run_sim.sh halfadder_tb
 ```
 
 This will:
 
-✅ Compile the testbench using `--binary --top-module <tb>`  
-✅ Run it and save logs to `/sim/logs/`  
+✅ Compile the testbench with Icarus Verilog  
+✅ Generate .vvp binary to `/sim/build/`  
+✅ Run it with vvp  
 ✅ Save waveforms to `/sim/waveforms/`  
 ✅ Automatically open GTKWave  
+✅ Display monitor and test results in terminal
 
 > ⚠️ **Important:**  
 > Your `$dumpfile(...)` in each testbench must match this convention:  
 > ```systemverilog
-> $dumpfile("sim/waveforms/<your_testbench>.vcd");
+> $dumpfile("../../sim/waveforms/<your_testbench>.vcd");
 > ```  
 > Otherwise the script will not find your VCD.
 
 ---
 
-### Manual Verilator Run (backup method - now outdated)
+### Manual Icarus Verilog Run (backup method)
 
-This was the old flow using `--cc --exe --build`, which does not work with pure Verilog testbenches.
+If needed, you can manually run:
 
 ```bash
 # Navigate to project root
 cd "/Users/carlos/Desktop/soc_project"
 
-# Example for comparator_tb:
+# Compile:
+iverilog -g2012 -o sim/build/dff_tb \
+    src/pkg/soc_pkg.sv \
+    src/modules/*.sv \
+    tb/dff_tb.sv
 
-verilator -sv --cc --exe --build \
-    -Wall -Wno-fatal \
-    -I./src/pkg \
-    ./src/pkg/soc_pkg.sv \
-    ./src/modules/*.sv \
-    ./tb/comparator_tb.sv \
-    -o sim_build/comparator_tb
+# Run:
+vvp sim/build/dff_tb
 
-# Run the compiled testbench
-./sim_build/comparator_tb > ./sim/logs/comparator_tb.log
-
-# Open waveform (if $dumpfile points to sim/waveforms/)
-gtkwave ./sim/waveforms/comparator.vcd
+# Open waveform:
+gtkwave sim/waveforms/dff_tb.vcd
 ```
 
 ---
 
-### Build & Run Any Module
-
-With the new project structure, source files are now organized as:
+### Project Structure
 
 ```
 /src/pkg/               # Project package (soc_pkg.sv)
 /src/modules/           # Design modules
 /tb/                    # Testbenches
-/sim/scripts/           # Run scripts
-/sim/waveforms/         # Waveform outputs
-/sim/logs/              # Simulation logs
+/sim/scripts/           # Run scripts (run_sim.sh)
+/sim/waveforms/         # Waveform outputs (.vcd)
+/sim/build/             # vvp binaries
+/sim/logs/              # (optional) Simulation logs
+/docs/                  # Documentation (workflow.md, testbenchREADME.md, etc.)
 ```
+
+---
 
 ### Notes:
 
-✅ You can run either automated or manual flow  
-✅ Automated flow is now the preferred one (correct --binary flow for Verilog TBs)  
-✅ You can replace `dff_tb` with any testbench  
-✅ All VCDs should point to `/sim/waveforms/`  
-✅ Logs will be in `/sim/logs/`  
-✅ Run all from project root (`soc_project`)
+✅ Automated flow is the preferred one  
+✅ You can run any testbench — no need to modify run_sim.sh anymore (uses wildcard + soc_pkg.sv first)  
+✅ All VCDs must point to `/sim/waveforms/`  
+✅ Build artifacts are in `/sim/build/`  
+✅ Run everything from project root or from `/sim/scripts/`
 
-### Future (optional):
+---
 
-You can further automate this using `/sim/scripts/run_sim.sh`.
+### Future:
 
-```
-./sim/scripts/run_sim.sh dff_tb
-./sim/scripts/run_sim.sh comparator_tb
-```
+- When moving to Verilator, we can reintroduce `--binary` flow and update this file again.
+- We will also explore Makefiles or other build automation.
 
 ---
